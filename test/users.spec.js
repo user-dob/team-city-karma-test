@@ -5,7 +5,7 @@ describe('Users factory', function() {
 });
 
 describe('Users factory 2', function() {
-    it('has a dummy spec to test 2 + 1', function() {
-        expect(2 + 1).toEqual(4);
+    it('has a dummy spec to test 2 + 3', function() {
+        expect(2 + 3).toEqual(5);
     });
 });
