@@ -5,11 +5,28 @@
 
 // node_modules\.bin\wdio.cmd
 
-var assert = require('assert');
-describe('webdriver.io page', function() {
-	it('should have the right title - the fancy generator way', function () {
-		browser.url('http://webdriver.io');
-		var title = browser.getTitle();
-		assert.equal(title, 'WebdriverIO - Selenium 2.0 javascript bindings for nodejs');
+var webdriverio = require('webdriverio'),
+	assert      = require('assert');
+
+describe('my webdriverio tests', function(){
+
+	this.timeout(99999999);
+	var client;
+
+	before(function(){
+		client = webdriverio.remote({ desiredCapabilities: {browserName: 'firefox'} });
+		return client.init();
+	});
+
+	it('Github test',function() {
+		return client
+			.url('https://github.com/')
+			.getTitle().then(function (title) {
+				assert(title === 'How people build software · GitHub');
+			})
+	});
+
+	after(function() {
+		return client.end();
 	});
 });
