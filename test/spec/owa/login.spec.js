@@ -4,7 +4,7 @@ describe('outlook.office.com/owa', function() {
 
 		client
 			.openSmartCloudConnect({mailTitle: 'Your Daily Digest for Chatter'})
-			.setValue('.app_search_input', 'test')
+			.setValue('.app_search_input', 'ContactForTestIphone')
 			.click('.fa-search')
 			.pause(4000)
 			.assert.containsText('.app_cards .card-info-fullname', 'ContactForTestIphone')
