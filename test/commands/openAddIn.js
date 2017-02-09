@@ -10,5 +10,7 @@ exports.command = function openAddIn(name) {
 		.assert.visible('iframe.AddinIframe')
 		// TODO
 		.frame('exttsp0')
-		.waitForElementVisible('.app_content_body', 60000)
+		.waitApiDone('/Query/SearchByEmails', 60000)
+
+		//.waitForElementVisible('.app_content_body', 60000)
 }

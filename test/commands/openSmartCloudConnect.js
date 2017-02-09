@@ -1,9 +1,11 @@
-var LOGIN = 'VBTestSF365@decadd.onmicrosoft.com'
+var LOGIN = 'VBTestSF365.2@decadd.onmicrosoft.com'
 var PASSWORD = 'aB123456'
 var MAIL_TITLE = 'Verify your identity in Your Developer Edition'
-var ADD_IN_NAME = 'SmartCloud Connect for Salesforce.com'
+var ADD_IN_NAME = 'L SCC for Salesforce.com'
+//var ADD_IN_NAME = 'SmartCloud Connect for Salesforce.com'
 
 exports.command = function openSmartCloudConnect(options) {
+
 	var options = options || {}
 	var login = options.login || LOGIN
 	var password = options.password || PASSWORD

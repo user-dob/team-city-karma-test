@@ -1,19 +1,23 @@
 {
   "src_folders" : ["test/spec"],
   "output_folder" : "reports",
-  "custom_commands_path" : "./test/commands",
+  "custom_commands_path" : [
+    "./node_modules/nightwatch-commands/commands",
+    "node_modules/nightwatch-custom-commands-assertions/js/commands",
+    "./test/commands"
+  ],
   "custom_assertions_path" : "",
   "page_objects_path" : "",
   "globals_path" : "./test/globals",
 
   "selenium" : {
     "start_process" : false,
-    "server_path" : "",
+    "server_path" : "C:\\Selenium\\selenium-server-standalone-3.0.1.jar",
     "log_path" : "",
     "port" : 4444,
     "cli_args" : {
-      "webdriver.chrome.driver" : "",
-      "webdriver.gecko.driver" : "",
+      "webdriver.chrome.driver" : "C:\\Selenium\\chromedriver.exe",
+      "webdriver.gecko.driver" : "C:\\Selenium\\geckodriver.exe",
       "webdriver.edge.driver" : ""
     }
   },
@@ -23,7 +27,7 @@
   "test_settings" : {
     "default" : {
       "launch_url" : "http://localhost",
-      "selenium_port"  : 4444,
+      "selenium_port"  : 4441,
       "selenium_host"  : "localhost",
       "silent": true,
       "screenshots" : {
@@ -31,7 +35,8 @@
         "path" : ""
       },
       "desiredCapabilities": {
-        "browserName": "firefox",
+        "browserName" : "firefox",
+        "javascriptEnabled": true,
         "marionette": true
       }
     },
