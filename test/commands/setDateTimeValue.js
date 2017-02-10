@@ -4,15 +4,11 @@ exports.command = function setDateTimeValue(selector, value) {
 
 	client.execute(function(selector, value){
 
-		//jQuery(selector).parent().data("DateTimePicker").date(new Date())
+		value = value || new Date()
 
-		//jQuery('#datetimepicker1').focus()
-		//jQuery('#datetimepicker1').click('#datetimepicker1 .input-group-addon')
+		jQuery(selector).parent().find('.input-group-addon').click()
 
-		jQuery('#datetimepicker1').data("DateTimePicker").date(new Date(2000))
-
-		//jQuery('#datetimepicker1 input').val(100)
-
+		//jQuery('#create_record_modal input[data-name="SLAExpirationDate__c"]').parent().data("DateTimePicker").date(new Date())
 
 		return true
 

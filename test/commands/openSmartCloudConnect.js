@@ -16,5 +16,5 @@ exports.command = function openSmartCloudConnect(options) {
 		.owaLogin(login, password)
 		.openEmail(mailTitle)
 		.openAddIn(addInName)
-		.waitSearchByEmails(60000)
+		.waitForRequestCompleted(120000)
 }

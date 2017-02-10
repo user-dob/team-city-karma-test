@@ -1,6 +1,8 @@
 exports.command = function waitApiDone(url, milliseconds) {
 
 	var client = this
+	var SF_MAIL_APP_NOT_INIT = 'SF_MAIL_APP_NOT_INIT'
+	var URL_TIMEOUT = 'URL_TIMEOUT'
 
 	client.executeAsync(function (url, milliseconds, done) {
 
@@ -9,7 +11,8 @@ exports.command = function waitApiDone(url, milliseconds) {
 		if(sfMailApp && sfMailApp.seleniumManager) {
 
 			var timeout = setTimeout(function () {
-				done(false)
+				clearTimeout(timeout)
+				done(URL_TIMEOUT)
 			}, milliseconds)
 
 			sfMailApp.seleniumManager.on('api', function (data) {
@@ -20,12 +23,19 @@ exports.command = function waitApiDone(url, milliseconds) {
 			})
 
 		} else {
-			// TODO
-			done(false)
+			done(SF_MAIL_APP_NOT_INIT)
 		}
 
 	}, [url, milliseconds], function (result) {
-		client.assert.equal(result.value, true, 'url message')
+
+		if(result.value === URL_TIMEOUT) {
+			client.assert.equal(null, true, 'url "'+url+'" timeout')
+		}
+
+		if(result.value === SF_MAIL_APP_NOT_INIT) {
+			client.assert.equal(null, true, 'sfMailApp not init')
+		}
+
 	})
 
 	return client
