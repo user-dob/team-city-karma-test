@@ -13,7 +13,7 @@ util.inherits(CommandAction, events.EventEmitter);
 
 CommandAction.prototype.command = function(milliseconds) {
 	this.startTimer = Date.now();
-	this.ms = milliseconds || 1000;
+	this.ms = milliseconds || 10000;
 	this.check();
 	return this;
 };
@@ -49,7 +49,6 @@ CommandAction.prototype.check = function(time) {
 		if(isRequestCompleted) {
 			if(self.secondTest) {
 				var msg = 'Condition was satisfied after ' + (now - self.startTimer) + ' milliseconds.';
-				console.log(msg)
 				self.client.assertion(true, true, false, msg, true);
 				return self.emit('complete');
 			} else {

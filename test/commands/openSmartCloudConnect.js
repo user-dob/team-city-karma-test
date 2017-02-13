@@ -1,4 +1,4 @@
-var LOGIN = 'VBTestSF365.2@decadd.onmicrosoft.com'
+var LOGIN = 'VBTestSF365@decadd.onmicrosoft.com'
 var PASSWORD = 'aB123456'
 var MAIL_TITLE = 'Verify your identity in Your Developer Edition'
 var ADD_IN_NAME = 'L SCC for Salesforce.com'
@@ -16,5 +16,5 @@ exports.command = function openSmartCloudConnect(options) {
 		.owaLogin(login, password)
 		.openEmail(mailTitle)
 		.openAddIn(addInName)
-		.waitForRequestCompleted(120000)
+		.waitForRequestCompleted(180000)
 }

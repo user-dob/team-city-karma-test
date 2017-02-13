@@ -2,9 +2,8 @@
   "src_folders" : ["test/spec"],
   "output_folder" : "reports",
   "custom_commands_path" : [
-    "./node_modules/nightwatch-commands/commands",
-    "node_modules/nightwatch-custom-commands-assertions/js/commands",
-    "./test/commands"
+    "test/commands",
+    "test/commands/form"
   ],
   "custom_assertions_path" : "",
   "page_objects_path" : "",

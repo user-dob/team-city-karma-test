@@ -20,8 +20,7 @@
   "devDependencies": {},
   "dependencies": {
     "nightwatch": "^0.9.12",
-    "nightwatch-commands": "^1.8.0",
-    "nightwatch-custom-commands-assertions": "^1.0.5",
-    "nightwatch-teamcity": "^0.1.1"
+    "nightwatch-teamcity": "^0.1.1",
+    "request": "^2.79.0"
   }
 }
