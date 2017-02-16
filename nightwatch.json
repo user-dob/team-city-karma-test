@@ -1,5 +1,5 @@
 {
-  "src_folders" : ["test/spec/add-in/"],
+  "src_folders" : ["test/e2e/add-in/"],
   "output_folder" : "reports",
   "custom_commands_path" : [
     "test/commands",
@@ -11,13 +11,11 @@
 
   "selenium" : {
     "start_process" : false,
-    "server_path" : "C:\\Selenium\\selenium-server-standalone-3.0.1.jar",
-    "log_path" : "",
-    "port" : 4444,
+    "server_path" : "D:\\www\\team-city-karma-test\\Selenium\\selenium-server-standalone-3.0.1.jar",
+    "log_path" : "./log",
+    "port" : 4440,
     "cli_args" : {
-      "webdriver.chrome.driver" : "C:\\Selenium\\chromedriver.exe",
-      "webdriver.gecko.driver" : "C:\\Selenium\\geckodriver.exe",
-      "webdriver.edge.driver" : ""
+      "webdriver.ie.driver" : "D:\\www\\team-city-karma-test\\Selenium\\IEDriverServer.exe"
     }
   },
 
@@ -26,7 +24,7 @@
   "test_settings" : {
     "default" : {
       "launch_url" : "http://localhost",
-      "selenium_port"  : 4441,
+      "selenium_port"  : 4440,
       "selenium_host"  : "localhost",
       "silent": true,
       "screenshots" : {
@@ -42,13 +40,24 @@
 
     "chrome" : {
       "desiredCapabilities": {
-        "browserName": "chrome"
+        "browserName" : "chrome",
+        "browserConnectionEnabled:": true,
+        "chromeOptions" : {
+          "args" : ["incognito", "test-type"]
+        }
       }
     },
 
     "edge" : {
       "desiredCapabilities": {
         "browserName": "MicrosoftEdge"
+      }
+    },
+
+    "ie" : {
+      "desiredCapabilities": {
+        "browserName" : "internet explorer",
+        "version": "11"
       }
     }
   }

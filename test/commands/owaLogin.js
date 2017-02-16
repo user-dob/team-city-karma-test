@@ -1,9 +1,11 @@
-var URL_OWA = 'https://outlook.office.com/owa/'
+var config = require('../config.json')
+var owa = config.owa
 
 exports.command = function owaLogin(login, password) {
 	return this
-		.url(URL_OWA)
-		.waitForElementVisible('body', 3000)
+		.url(owa.url)
+		.waitForElementVisible('body', 5000)
+		.waitForElementVisible('.use_another_account', 5000).click('.use_another_account')
 		.click('#cred_userid_inputtext')
 		.setValue('#cred_userid_inputtext', login)
 		.click('#cred_password_inputtext')

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ie": "node ./test/run/ie.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,9 @@
     "url": "https://github.com/user-dob/team-city-karma-test/issues"
   },
   "homepage": "https://github.com/user-dob/team-city-karma-test#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "node-cmd": "^1.3.0"
+  },
   "dependencies": {
     "nightwatch": "^0.9.12",
     "nightwatch-teamcity": "^0.1.1",

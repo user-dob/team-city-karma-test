@@ -1,0 +1,13 @@
+{
+  "owa": {
+    "url": "https://outlook.office.com/owa/",
+    "login": "VBTestSF365.2@decadd.onmicrosoft.com",
+    "password": "aB123456",
+    "mail": "Verify your identity in Your Developer Edition"
+  },
+  "addin": {
+    "name": "L SCC for Salesforce.com",
+    "login": "VBTestSF365.2@decadd.onmicrosoft.com",
+    "password": "aB123456"
+  }
+}
