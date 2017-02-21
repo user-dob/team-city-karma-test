@@ -1,6 +1,6 @@
 exports.command = function search(text) {
 	return this
-		.waitForElementVisible('@SearchInput', 1000)
+		.waitForElementVisible('@SearchInput', 3000)
 		.clearValue('@SearchInput')
 		.setValue('@SearchInput', text)
 		.sendKeys('@SearchInput', this.api.Keys.ENTER)
