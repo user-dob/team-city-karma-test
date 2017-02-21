@@ -25,6 +25,12 @@ module.exports = {
 				this.api.pause(time)
 				return this
 			}
+		},
+		{
+			end: function () {
+				this.api.end()
+				return this
+			}
 		}
 	]
 }
