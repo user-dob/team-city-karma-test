@@ -33,6 +33,7 @@ module.exports = {
 		"workers": "auto"
 	},
 
+
 	"test_runner" : {
 		"type" : "mocha",
 		"options" : {
