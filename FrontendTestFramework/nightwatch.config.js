@@ -20,7 +20,7 @@ module.exports = {
 		"start_process" : true,
 		"server_path" : path.join(__dirname, 'selenium/selenium-server-standalone-3.0.1.jar'),
 		"log_path" : "./log",
-		"port" : 4448,
+		"port" : 4449,
 		"cli_args" : {
 			"webdriver.chrome.driver" : path.join(__dirname, 'selenium/chromedriver.exe'),
 			"webdriver.ie.driver" : path.join(__dirname, 'selenium/IEDriverServer.exe'),
@@ -38,7 +38,7 @@ module.exports = {
 	"test_settings" : {
 		"default" : {
 			"launch_url" : "http://localhost",
-			"selenium_port"  : 4448,
+			"selenium_port"  : 4449,
 			"selenium_host"  : "localhost",
 			"silent": true,
 			"screenshots" : {

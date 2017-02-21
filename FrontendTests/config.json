@@ -1,20 +1,20 @@
 {
   "owa": {
     "url": "https://outlook.office.com/owa/",
-    "login": "SFDesktopUser@decadd.onmicrosoft.com",
+    "login": "sfss.qa02@invisiblecrm122.onmicrosoft.com",
     "password": "aB123456",
-    "defaultEmail": "Verify your identity in Your Developer Edition",
-    "defaultEvent": "test"
+    "defaultEmail": "Your new Salesforce security token",
+    "defaultEvent": "E1 OL RECC-1"
   },
   "addin": {
     "api": "https://sfdc-mailapp-invisiblecrm.azurewebsites.net",
-    "name": "SmartCloud Connect for Salesforce.com",
+    "name": "DEV SmartCloud Connect for Salesforce",
     "login": "SFDesktopUser@decadd.onmicrosoft.com",
     "password": "aB123456"
   },
   "modeOptions": {
   },
   "account": {
-    "name": "Account-1487354944214"
+    "name": "OneAccountEEE"
   }
 }
