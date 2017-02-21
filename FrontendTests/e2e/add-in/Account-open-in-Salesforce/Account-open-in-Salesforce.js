@@ -2,10 +2,7 @@ mode('Account open in Salesforce', function (config) {
 
 	it('Account open in Salesforce', function (browser) {
 		var addin = browser.page.addin();
-		//var name = browser.config.account.name
-		var name = 'name'
-
-		console.log('name', config.account.name)
+		var name = 'Account-1487354944214'
 
 		addin
 			.search(name)
