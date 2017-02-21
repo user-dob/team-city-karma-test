@@ -10,16 +10,6 @@ var	EVENT_COMPOSE_MODE = 3
 
 var modeList = [
 	{
-		key: '@email-read',
-		title: '[email read mode]',
-		mode: EMAIL_READ_MODE
-	},
-	{
-		key: '@email-compose',
-		title: '[email compose mode]',
-		mode: EMAIL_COMPOSE_MODE
-	},
-	{
 		key: '@event-read',
 		title: '[event read mode]',
 		mode: EVENT_READ_MODE
@@ -28,6 +18,16 @@ var modeList = [
 		key: '@event-compose',
 		title: '[event compose mode]',
 		mode: EVENT_COMPOSE_MODE
+	},
+	{
+		key: '@email-read',
+		title: '[email read mode]',
+		mode: EMAIL_READ_MODE
+	},
+	{
+		key: '@email-compose',
+		title: '[email compose mode]',
+		mode: EMAIL_COMPOSE_MODE
 	}
 ]
 
