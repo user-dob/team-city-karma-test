@@ -1,0 +1,20 @@
+{
+  "name": "FrontendTestFramework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "caller-id": "^0.1.0",
+    "deep-assign": "^2.0.0",
+    "mocha-teamcity-reporter": "^1.1.1",
+    "nightwatch": "^0.9.12",
+    "nightwatch-teamcity": "^0.1.1",
+    "request": "^2.79.0"
+  }
+}

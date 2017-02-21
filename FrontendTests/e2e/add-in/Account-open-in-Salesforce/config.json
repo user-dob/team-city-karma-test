@@ -1,0 +1,9 @@
+{
+  "modeOptions": {
+    "@event-read": {},
+    "@event-compose": {}
+  },
+  "account": {
+    "name": "Account delete"
+  }
+}

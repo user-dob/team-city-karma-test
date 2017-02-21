@@ -1,0 +1,29 @@
+{
+  "owa": {
+    "url": "https://outlook.office.com/owa/",
+    "login": "SFDesktopUser@decadd.onmicrosoft.com",
+    "password": "aB123456",
+    "defaultEmail": "Verify your identity in Your Developer Edition",
+    "defaultEvent": "test"
+  },
+  "addin": {
+    "api": "https://sfdc-mailapp-invisiblecrm.azurewebsites.net",
+    "name": "SmartCloud Connect for Salesforce.com",
+    "login": "SFDesktopUser@decadd.onmicrosoft.com",
+    "password": "aB123456"
+  },
+  "modeOptions": {
+    "@email-read": {},
+    "@email-compose": {},
+    "@event-read": {},
+    "@event-compose": {}
+  },
+  "account": {
+    "name": "Account-1487354944214"
+  },
+  "foo": {
+    "bar": {
+      "user": 12
+    }
+  }
+}
