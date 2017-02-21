@@ -1,27 +1,11 @@
-mode('Account open in Salesforce', function (config) {
+describe('test', function () {
 
-	it('Account open in Salesforce', function (browser) {
-		var addin = browser.page.addin();
-		var name = 'Account-1487354944214'
-
-		addin
-			.search(name)
-			.assert.containsText('.app_cards .card-info-fullname', name)
-			.click('.app_card_template [data-name="detailed-actions-show"]')
-			.waitAndClick('.app_card_template [data-name="open-in-salesforce"]')
-			.api.windowHandles(function(result) {
-
-				browser
-					.pause(1000)
-					.assert.equal(result.value.length, 2, 'There should be two windows open.')
-
-				var newWindow = result.value[1]
-
-				browser
-					.switchWindow(newWindow)
-					.waitForElementVisible('h2.topName', 10000)
-					.assert.containsText('h2.topName', name)
-					.end()
-			})
+	it('test', function (browser) {
+		browser
+			.url('http://nightwatchjs.org/')
+			.waitForElementVisible('body', 3000)
+			.assert.title("Nightwatch.js | Node.js powered End-to-End testing framework")
+			.end()
 	})
+
 })
