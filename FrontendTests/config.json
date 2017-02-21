@@ -13,10 +13,7 @@
     "password": "aB123456"
   },
   "modeOptions": {
-    "@email-read": {},
-    "@email-compose": {},
-    "@event-read": {},
-    "@event-compose": {}
+    "@email-read": {}
   },
   "account": {
     "name": "Account-1487354944214"
