@@ -32,7 +32,7 @@ module.exports = {
 		"type" : "mocha",
 		"options" : {
 			"timeout" : 10000000,
-			//"reporter": path.join(__dirname, 'node_modules/mocha-teamcity-reporter/lib/teamcity.js')
+			"reporter": path.join(__dirname, 'node_modules/mocha-teamcity-reporter/lib/teamcity.js')
 		}
 	},
 	"test_settings" : {
