@@ -29,7 +29,9 @@ module.exports = {
 		{
 			end: function () {
 				this.api
-					.closeWindow()
+					.execute(function () {
+						window.close()
+					}, [])
 					.end()
 				return this
 			}
