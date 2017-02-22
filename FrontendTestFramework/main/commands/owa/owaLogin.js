@@ -2,10 +2,9 @@ exports.command = function owaLogin(login, password) {
 
 	var client = this
 	var owa = client.page.owa();
-
 	owa
 		.navigate()
-		.waitForElementVisible('body', 5000)
+		.waitForElementVisible('body', 3000)
 		.execute(function () {
 			jQuery('.use_another_account').click()
 		}, [])

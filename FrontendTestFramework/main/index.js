@@ -9,6 +9,7 @@ function Framework(config) {
 	}
 
 	this.mode = new Mode(config).describe
+	this.Mode = Mode
 
 	this.getNightWatchConfig = function () {
 		nwDefaultConfig.test_settings.default.globals = {
