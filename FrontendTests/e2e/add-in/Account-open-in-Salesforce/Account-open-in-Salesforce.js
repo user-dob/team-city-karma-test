@@ -27,13 +27,13 @@ function test(modeKey) {
 	}
 }
 
-// describe('Account open in Salesforce [email read mode]', function () {
-// 	it('Account open in Salesforce', test(Mode.EMAIL_READ_MODE))
-// })
-//
-// describe('Account open in Salesforce [email compose mode]', function () {
-// 	it('Account open in Salesforce', test(Mode.EMAIL_COMPOSE_MODE))
-// })
+describe('Account open in Salesforce [email read mode]', function () {
+	it('Account open in Salesforce', test(Mode.EMAIL_READ_MODE))
+})
+
+describe('Account open in Salesforce [email compose mode]', function () {
+	it('Account open in Salesforce', test(Mode.EMAIL_COMPOSE_MODE))
+})
 
 describe('Account open in Salesforce [event read mode]', function () {
 	it('Account open in Salesforce', test(Mode.EVENT_READ_MODE))
