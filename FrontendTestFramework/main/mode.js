@@ -58,20 +58,22 @@ function Mode(globalConfig) {
 			if(options[item.key]) {
 				describe(testName + ' ' + item.title, function () {
 
-					before(function (browser, done) {
-						var addin = browser.page.addin();
+					it(testName + ' [login]', function (browser) {
+						var addin = browser.page.addin()
+
+						browser.config = self.getConfig(callerData)
 
 						addin
-							.openSmartCloudConnect(options[item.key], item.mode, done)
+							.openSmartCloudConnect(options[item.key], item.mode)
 					})
 
-					//describe('', body.bind(this, config))
+					body(config)
 
-					describe('', body)
 				})
 			}
 		})
 	}
+
 }
 
 Mode.EMAIL_READ_MODE = EMAIL_READ_MODE
