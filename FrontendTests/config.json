@@ -8,7 +8,7 @@
   },
   "addin": {
     "api": "https://sfdc-mailapp-invisiblecrm.azurewebsites.net",
-    "name": "DEV SmartCloud Connect for Salesforce",
+    "name": "SmartCloud Connect for Salesforce.com",
     "login": "SFDesktopUser@decadd.onmicrosoft.com",
     "password": "aB123456"
   },
