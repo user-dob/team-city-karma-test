@@ -29,7 +29,7 @@ module.exports = {
 	},
 
 	"request_timeout_options": {
-		"timeout": 60000,
+		"timeout": 10000,
 		"retry_attempts": 3
 	},
 

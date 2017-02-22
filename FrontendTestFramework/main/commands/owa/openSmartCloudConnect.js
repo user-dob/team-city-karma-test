@@ -42,7 +42,6 @@ function openEmailReadMode(login, password, title, addInName, done) {
 		.owaLogin(login, password)
 		.openEmail(title)
 		.waitForElementVisible('.disableTextSelection[aria-label="Message header"]', 10000)
-		.pause(1000)
 		.execute(function () {
 			// TODO not 100% logic
 			jQuery('.disableTextSelection[aria-label="Message header"] button[title="Reply all"]:visible').parents('.disableTextSelection:first').click()
