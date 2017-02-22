@@ -2,7 +2,8 @@
   "modeOptions": {
     "@email-read": {},
     "@email-compose": {},
-    "@event-read": {}
+    "@event-read": {},
+    "@event-compose": {}
   },
   "account": {
     "name": "Account delete"

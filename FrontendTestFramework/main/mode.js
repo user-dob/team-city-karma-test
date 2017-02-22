@@ -42,6 +42,7 @@ function Mode(globalConfig) {
 		if(fs.existsSync(localConfigPath)) {
 			var localConfig = require(localConfigPath)
 			config = deepAssign({}, config, localConfig)
+			config.modeOptions = localConfig.modeOptions || config.modeOptions
 		}
 
 		return config

@@ -78,7 +78,7 @@ function openEventComposeMode(login, password, title, addInName, done) {
 		.owaLogin(login, password)
 		.openEvent(title)
 		.waitAndClick('button[aria-label="Edit"]')
-		.waitForElementVisible('input[aria-label="Add a title for the event"]', 1000)
+		.waitForElementVisible('input[aria-label="Add a title for the event"]', 5000)
 		.openAddIn(addInName)
 		.waitForRequestCompleted(180000, done)
 }
