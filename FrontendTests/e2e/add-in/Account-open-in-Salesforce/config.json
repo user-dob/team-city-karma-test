@@ -1,6 +1,7 @@
 {
   "modeOptions": {
     "@email-read": {},
+    "@email-compose": {},
     "@event-read": {}
   },
   "account": {

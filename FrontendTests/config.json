@@ -4,7 +4,7 @@
     "login": "sfss.qa02@invisiblecrm122.onmicrosoft.com",
     "password": "aB123456",
     "defaultEmail": "Your new Salesforce security token",
-    "defaultEvent": "E1 OL RECC-1"
+    "defaultEvent": "Test Event"
   },
   "addin": {
     "api": "https://sfdc-mailapp-invisiblecrm.azurewebsites.net",
