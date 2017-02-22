@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "selenium": "node run.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
     "mocha-teamcity-reporter": "^1.1.1",
     "nightwatch": "^0.9.12",
     "nightwatch-teamcity": "^0.1.1",
+    "node-cmd": "^2.0.0",
     "request": "^2.79.0"
   }
 }
