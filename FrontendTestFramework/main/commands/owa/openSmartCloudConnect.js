@@ -45,11 +45,7 @@ function openEmailReadMode(login, password, title, addInName, done) {
 		.pause(1000)
 		.execute(function () {
 			// TODO not 100% logic
-			var isDraft = jQuery('.disableTextSelection[aria-label="Message header"] .ms-Icon--trash:visible').length
-
-			if(isDraft) {
-				jQuery('.disableTextSelection[aria-label="Message header"] button[title="Reply all"]:visible').parents('.disableTextSelection:first').click()
-			}
+			jQuery('.disableTextSelection[aria-label="Message header"] button[title="Reply all"]:visible').parents('.disableTextSelection:first').click()
 		}, [])
 		.openAddIn(addInName)
 		.waitForRequestCompleted(180000, done)

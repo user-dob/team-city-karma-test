@@ -28,6 +28,11 @@ module.exports = {
 		}
 	},
 
+	"request_timeout_options": {
+		"timeout": 60000,
+		"retry_attempts": 3
+	},
+
 	"test_runner" : {
 		"type" : "mocha",
 		"options" : {

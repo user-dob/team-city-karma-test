@@ -1,0 +1,11 @@
+{
+  "modeOptions": {
+    "@email-read": {},
+    "@email-compose": {},
+    "@event-read": {},
+    "@event-compose": {}
+  },
+  "account": {
+    "name": "Account-1487"
+  }
+}
