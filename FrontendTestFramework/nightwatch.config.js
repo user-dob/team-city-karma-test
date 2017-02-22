@@ -17,7 +17,7 @@ module.exports = {
 	"globals_path" : path.join(__dirname, 'main/globals.js'),
 
 	"selenium" : {
-		"start_process" : false,
+		"start_process" : true,
 		"server_path" : path.join(__dirname, 'selenium/selenium-server-standalone-3.0.1.jar'),
 		"log_path" : "./log",
 		"port" : 4440,
