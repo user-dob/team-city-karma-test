@@ -23,4 +23,6 @@ function buildCommandLine(config) {
 	return command.join(' ')
 }
 
+// TODO:temp data
+
 cmd.run(buildCommandLine(config.selenium))
