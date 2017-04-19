@@ -6,6 +6,7 @@ var deepAssign = require('deep-assign')
 var EMAIL_READ_MODE = 0
 var	EMAIL_COMPOSE_MODE = 1
 var	EVENT_READ_MODE = 2
+
 var	EVENT_COMPOSE_MODE = 3
 
 var modeList = [
@@ -21,6 +22,7 @@ var modeList = [
 	},
 	{
 		key: '@event-read',
+		
 		title: '[event read mode]',
 		mode: EVENT_READ_MODE
 	},
@@ -37,11 +39,12 @@ function Mode(globalConfig) {
 	this.getConfig = function (callerData) {
 		var config = globalConfig
 		var dirname = path.dirname(callerData.filePath)
+		
 		var localConfigPath = path.join(dirname, 'config.json')
 
 		if(fs.existsSync(localConfigPath)) {
-			var localConfig = require(localConfigPath)
-			config = deepAssign({}, config, localConfig)
+			var localConfig = require(localConfigPath);
+			config = deepAssign({}, config, localConfig);
 			config.modeOptions = localConfig.modeOptions || config.modeOptions
 		}
 
@@ -61,7 +64,7 @@ function Mode(globalConfig) {
 					it(testName + ' [login]', function (browser) {
 						var addin = browser.page.addin()
 
-						browser.config = self.getConfig(callerData)
+						browser.config = self.getConfig(callerData);
 
 						addin
 							.openSmartCloudConnect(options[item.key], item.mode)
@@ -79,6 +82,6 @@ function Mode(globalConfig) {
 Mode.EMAIL_READ_MODE = EMAIL_READ_MODE
 Mode.EMAIL_COMPOSE_MODE = EMAIL_COMPOSE_MODE
 Mode.EVENT_READ_MODE = EVENT_READ_MODE
-Mode.EVENT_COMPOSE_MODE = EVENT_COMPOSE_MODE
+Mode.EVENT_COMPOSE_MODE = EVENT_COMPOSE_MODE;
 
 module.exports = Mode
